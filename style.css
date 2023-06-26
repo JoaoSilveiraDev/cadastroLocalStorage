@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+:root{
+    --cor-primaria: #01E746;
+    --cor-secundaria: rgb(6, 6, 6);
+    --cor-terciaria: rgb(230, 230, 230);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.cabecalho{
+    height: 10%;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+}
+.cabecalho__menu{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%; 
+}
+.cabecalho__menu__botoes{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: 'Krona one', sans-serif;
+}
+.apresentacao{
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+}
+.apresentacao__div__esquerda{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--cor-terciaria);
+    font-family: 'Krona one', sans-serif;
+}
+.apresentacao__div__esquerda__titulo{
+    color: var(--cor-primaria);
+    font-size: 30px;
+}
+.apresentacao__div__esquerda__texto{
+    font-size: 18px;
+}
+.apresentacao__div__direita{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+.input{
+    width: 80%;
+    height: 15%;
+    border-radius: 10px;
+    border: 0.5px solid rgb(35, 34, 34);
+    font-family: 'Krona one', sans-serif;
+    text-align: center;
+}
+.botao{
+    width: 30%;
+    height: 15%;
+    font-family: 'Krona one', sans-serif;
+    border-radius: 10px;
+    color: var(--cor-terciaria);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+.rodape{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        180deg, var(--cor-primaria), green
+    );
+}
+.cabecalho__menu__botoes:hover{
+    color: #01E746;
+}
+.botao:hover{
+    color: white;
+    background-image: linear-gradient(
+        180deg, rgb(13, 69, 199), rgb(38, 126, 242)
+    );
+}
